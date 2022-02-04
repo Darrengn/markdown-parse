@@ -32,7 +32,9 @@ public class MarkdownParse {
                 continue;
             }
             int closeParen = markdown.indexOf(")", nextCloseBracket);
-            
+            if(closeParen == -1){
+                break;
+            }
             toReturn.add(markdown.substring(nextCloseBracket + 2, closeParen));
             currentIndex = closeParen + 1;
             System.out.println(currentIndex);
