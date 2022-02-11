@@ -7,6 +7,8 @@ import java.util.ArrayList;
 //scp -r C:\Users\ngwda\Documents\GitHub\markdown-parse cs15lwi22auh@ieng6.ucsd.edu:~/
 // ssh cs15lwi22auh@ieng6.ucsd.edu
 
+
+
 public class MarkdownParse {
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
